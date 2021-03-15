@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>hello</title>
+        <link rel="stylesheet" type="text/css" href="public/index.css">
+    </head>
+    <body>
+        <h1>值绑定</h1>
+        <p><%=num%></p>
+        <h1>节点渲染</h1>
+        <%-tag_p%> 
+
+        <h1>条件判断</h1>
+        <%if(flag==true){%> 
+            <p>flag为true</p>
+        <%}else{%> 
+            <p>flag为false</p>
+        <%}%> 
+
+        <h1>循环遍历</h1>
+        <%for(var i=0; i<list.length; i++){%>
+            <p><%=list[i]%></p>
+        <%}%> 
+    </body>
+</html>
