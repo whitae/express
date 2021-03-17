@@ -10,4 +10,6 @@ router.get('/add', (req, res) => {
 router.get('/delete', (req, res) => {
     res.send('删除用户');
 });
+router.get('/listall', (req, res) => {
+});
 module.exports = router;
