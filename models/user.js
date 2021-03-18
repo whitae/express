@@ -2,10 +2,11 @@ const mongoose = require('./db');
 
 // TODO定义一个schema
 let userSchema = mongoose.Schema({
-    name: String,
+    name: {
+        type: String,
+    },
     age: {
         type: Number,
-        default: 18,
     },
 });
 // TODO定义数据库模型 操作数据库
